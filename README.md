@@ -1,20 +1,25 @@
-TicTacToe Game
-A Tic-Tac-Toe game built with HTML, CSS, and JavaScript. Play against a friend in this responsive, interactive implementation of the timeless 3x3 strategy game.
+ Tic Tac Toe Game  
 
-Features
-Two-player mode (X and O)
-Win detection for all possible combinations
-Draw detection when the board is full
-Responsive design 
-Visual feedback for winning combinations
-Restart game functionality
-Turn indicator showing whose turn it is
+A fun, interactive Tic Tac Toe game for two players (X and O). Built with HTML, CSS, and vanilla JavaScript.  
 
-How to Play
-Player X always goes first
-Click/tap on any empty cell to place your mark
-The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins
-If all 9 cells are filled without a winner, the game ends in a draw
-Click "Restart Game" to play again
 
-Enjoy the game
+##  Features  
+**2-Player Mode** – Alternate turns between X and O.  
+**Win Detection** – Automatically detects a winner or draw.  
+**Reset Game** – Restart anytime with the "Reset" button.  
+**Score Tracking** – Keeps count of wins for both players.  
+**Responsive Design** – Works on desktop and mobile.  
+
+##  How to Play  
+**Start**: Player X always goes first.  
+**Take Turns**: Click any empty cell to place your symbol (X or O).  
+**Win**: Get 3 symbols in a row (horizontally, vertically, or diagonally).  
+**Reset**: Click the "Reset" button to start a new round.  
+
+##  Tech Used  
+**Frontend**: HTML, CSS, JavaScript  
+**Animations**: CSS transitions for smooth gameplay.  
+  
+
+
+ 
