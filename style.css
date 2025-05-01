@@ -1,101 +1,102 @@
 :root {
-    --primary-color: #6c5ce7;
-    --secondary-color: #00cec9;   
-    --win-color: #00b894;         
-    --text-color: #2d3436;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  body {
-    background-color: #f5f6fa;     
-    margin: 0;
-    padding: 20px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Permanent Marker", cursive;
-  }
-  
-  #gameContainer {
-    text-align: center;
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    max-width: 90vw;
-  }
-  
-  h1 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #cellContainer {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 8px;                     
-    width: min(245px, 80vw);      
-    margin: 1rem auto;
-  }
-  
-  .cell {
-    width: 75px;
-    height: 75px;
-    border: 2px solid var(--secondary-color);
-    border-radius: 8px;           
-    box-shadow: var(--shadow);
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
-    background: white;
-    color: var(--text-color);
-    transition: all 0.3s ease;    
-  }
-  
-  .cell:hover {
-    transform: scale(1.05);
-    background: rgba(0, 206, 201, 0.1); 
-  }
-  
-  .cell:active {
-    transform: scale(0.98);
-  }
-  
-  
-  .cell.winner {
-    background-color: rgba(0, 184, 148, 0.3);
-    animation: pulse 1.5s infinite;
-  }
-  
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-  }
-  
+  --primary-color: #6c5ce7;       /* Purple */
+  --secondary-color: #00cec9;    /* Teal */
+  --win-color: #00b894;          /* Green */
+  --text-color: #2d3436;         /* Dark gray */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  #statusText {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-  }
-  
-  
-  #restartBtn {
-    margin-top: 1.5rem;
-    padding: 0.5rem 1.5rem;
-    font-family: inherit;
-    font-size: 1rem;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-  }
-  
-  #restartBtn:hover {
-    background: #271b81;         
-  }
+body {
+  background: linear-gradient(135deg, #6897f4, #e37ffd);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+#gameContainer {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  max-width: 90vw;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 6px;                     /* Adds space between cells */
+    /* Responsive width */
+  margin: 1rem auto;
+}
+
+.cell {
+  width: 75px;
+  height: 75px;
+
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;           /* Rounded corners */
+  box-shadow: var(--shadow);
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  background: white;
+  color: var(--text-color);
+  transition: all 0.3s ease;    /* Smooth hover/click effects */
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background: rgba(0, 206, 201, 0.1); /* Light teal hover */
+}
+
+.cell:active {
+  transform: scale(0.98);
+}
+
+/* Winning cells animation */
+.cell.winner {
+  background-color: rgba(0, 184, 148, 0.3);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Status text styling */
+#statusText {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Restart button */
+#restartBtn {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#restartBtn:hover {
+  background: #5649c0;          /* Darker purple */
+}
