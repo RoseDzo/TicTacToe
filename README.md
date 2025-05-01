@@ -6,8 +6,7 @@ A fun, interactive Tic Tac Toe game for two players (X and O). Built with HTML, 
 ##  Features  
 **2-Player Mode** – Alternate turns between X and O.  
 **Win Detection** – Automatically detects a winner or draw.  
-**Reset Game** – Restart anytime with the "Reset" button.  
-**Score Tracking** – Keeps count of wins for both players.  
+**Reset Game** – Restart anytime with the "Reset" button.   
 **Responsive Design** – Works on desktop and mobile.  
 
 ##  How to Play  
