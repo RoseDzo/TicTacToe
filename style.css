@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #6c5ce7;       /* Purple */
-  --secondary-color: #00cec9;    /* Teal */
-  --win-color: #00b894;          /* Green */
-  --text-color: #2d3436;         /* Dark gray */
+  --primary-color: #6c5ce7;      
+  --secondary-color: #00cec9;
+  --win-color: #00b894;         
+  --text-color: #2d3436;        
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,8 +35,7 @@ h1 {
 #cellContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 6px;                     /* Adds space between cells */
-    /* Responsive width */
+  gap: 6px;                    
   margin: 1rem auto;
 }
 
@@ -45,26 +44,26 @@ h1 {
   height: 75px;
 
   border: 2px solid var(--secondary-color);
-  border-radius: 8px;           /* Rounded corners */
+  border-radius: 8px;           
   box-shadow: var(--shadow);
   line-height: 75px;
   font-size: 50px;
   cursor: pointer;
   background: white;
   color: var(--text-color);
-  transition: all 0.3s ease;    /* Smooth hover/click effects */
+  transition: all 0.3s ease;
 }
 
 .cell:hover {
   transform: scale(1.05);
-  background: rgba(0, 206, 201, 0.1); /* Light teal hover */
+  background: rgba(0, 206, 201, 0.1); 
 }
 
 .cell:active {
   transform: scale(0.98);
 }
 
-/* Winning cells animation */
+
 .cell.winner {
   background-color: rgba(0, 184, 148, 0.3);
   animation: pulse 1.5s infinite;
@@ -76,14 +75,14 @@ h1 {
   100% { transform: scale(1); }
 }
 
-/* Status text styling */
+
 #statusText {
   margin-top: 1rem;
   font-size: 1.5rem;
   color: var(--primary-color);
 }
 
-/* Restart button */
+
 #restartBtn {
   margin-top: 1.5rem;
   padding: 0.5rem 1.5rem;
@@ -98,5 +97,5 @@ h1 {
 }
 
 #restartBtn:hover {
-  background: #5649c0;          /* Darker purple */
+  background: #5649c0;         
 }
