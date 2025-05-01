@@ -19,6 +19,7 @@ A fun, interactive Tic Tac Toe game for two players (X and O). Built with HTML, 
 **Frontend**: HTML, CSS, JavaScript  
 **Animations**: CSS transitions for smooth gameplay.  
   
-
+## Demo
+https://6813d99aa9d7f4107ed8bced--amazing-stroopwafel-4f2e0b.netlify.app/
 
  
